@@ -1,15 +1,14 @@
 class TilesController < ApplicationController
   before_action :get_params, only: [:show]
   def index
-    render json: TileSerializer.new(Tile.all)
+    tiles = Tile.all
+    render json: tiles
   end
 
   def show
-    options = {
-      include: [:board_id, :status_code, :img_url, :status_description]
-    }
-
-    render json: TileSerializer.new(Tile.find(params[:id]), options)
+    tile = Tile.find(params[:id])
+    
+    render json: tile, include: "**"
   end
 
   def get_params
