@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 2019_06_21_153858) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "boards", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "urls", default: "{}"
-    t.string "codes", default: "{}"
+    t.string "urls", default: [], array: true
+    t.string "codes", default: [], array: true
     t.integer "likes", default: 0
   end
 
