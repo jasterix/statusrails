@@ -16,6 +16,7 @@ default: &default
 development:
   <<: *default
   host: localhost
+  adapter: postgresql
   database: statusbackend_development
   username: statusbackend
   password: 123
@@ -25,6 +26,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  adapter: postgresql
   database: statusbackend_test
   username: statusbackend
   password: 123
@@ -41,6 +43,7 @@ test:
 
 production:
   <<: *default
+  adapter: postgresql
   database: statusbackend_production
   username: statusbackend
   password:  <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
