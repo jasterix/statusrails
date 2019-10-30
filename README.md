@@ -17,7 +17,7 @@
 
 In the project directory, you can run:
 
-##### $ `cd railsStatus`
+##### $ `cd rails Status`
 
 ## Available Scripts
 
