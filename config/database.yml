@@ -45,5 +45,5 @@ production:
   <<: *default
   adapter: postgresql
   database: statusbackend_production
-  username: statusbackend
+  username: 
   password:  <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
