@@ -1,6 +1,6 @@
 class BoardsController < ApplicationController
   before_action :get_params, only: [:show]
-  skip_before_action :verify_authenticity_token
+  
 
   def index
     boards = Board.all
