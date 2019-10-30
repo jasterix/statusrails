@@ -1,10 +1,10 @@
 <h1 align="center">Status</h1>
 <h3 align="center">Status is a Giphy API that generates GIFs for assigned HTTP status codes</h3>
-<p align="center">
-<img src="https://media.giphy.com/media/huDymbVWlPdrSDCa1u/giphy.gif" width="70%">
-</p>
 
-  
+<h4 align="center"> View the live project <a href="https://statuslive.netlify.com/"> here </a></h4>
+<h4 align="center"> View the live API <a href="https://statuslive.herokuapp.com/boards"> here </a></h4>
+ <br>
+
 ## Clone the source locally
 
 ##### $ `git clone https://github.com/jasterix/statusrails.git`
