@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/index'
+  # root to: "boards#index"
   resources :users
   resources :boards
   resources :tiles
